@@ -13,7 +13,7 @@ development: &development
   host: localhost
 test:
   <<: *development
-  database: pscrmdata_test
+  database: firstblog
 
 production:
   <<: *development
