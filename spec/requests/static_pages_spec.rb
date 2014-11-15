@@ -9,10 +9,15 @@ describe "StaticPages" do
   	end
 
   	it "the home's title must be beautiful" do
-		visit '/static_pages/home'
-		page.should have_selector('title', 
-							:text => "love station | Home")
-	end
+  		visit '/static_pages/home'
+  		page.should have_selector('title', 
+  							:text => "love station | Home")
+	  end
+    it "the home's title must be beautiful too" do
+      visit '/static_pages/home'
+      page.should have_selector('title', 
+                :text => "love station")
+    end
   end
 end
 
@@ -25,10 +30,10 @@ describe "StaticPages" do
   	end
 
   	it "the help's title must be beautiful" do
-		visit '/static_pages/help'
-		page.should have_selector('title', 
-							:text => "love station | Help")
-	end
+  		visit '/static_pages/help'
+  		page.should have_selector('title', 
+  							:text => "love station | Help")
+	   end
   end
 end
 
@@ -41,9 +46,9 @@ describe "StaticPages" do
   	end
 
   	it "the about's title must be beautiful" do
-		visit '/static_pages/about'
-		page.should have_selector('title', 
-							:text => "love station | About")
-	end
+  		visit '/static_pages/about'
+  		page.should have_selector('title', 
+  							:text => "love station | About")
+	  end
   end
 end
