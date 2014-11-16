@@ -13,7 +13,7 @@ gem 'mysql2'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-
+  gem 'bcrypt-ruby', '3.0.1'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
@@ -25,6 +25,7 @@ group :development, :test do
 	gem 'rspec-rails', '2.11.0'
 	gem 'guard-rspec', '1.2.1'
 	gem 'spork', '0.9.2'
+	gem 'annotate', '~> 2.6.5'
 end
 
 group :production do
